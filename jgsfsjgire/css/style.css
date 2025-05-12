@@ -1,0 +1,965 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    background-color: #1B1D29;
+}
+
+.logo{
+    width: 170px;
+    height: 170px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 7.5%;
+    padding-right: 9%;
+    margin-top: 3%;
+    /*position: fixed;
+    width: 100%;
+    background-color: #1B1D29;*/
+}
+
+.header--nav{
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+}
+
+.burger_open{
+    display: none;
+}
+.burger_close{
+    display: none;
+}
+.hidden{
+    display: none;
+}
+
+.burger__nav{
+    position: absolute;
+    left: 0;
+    top: 200px;
+}
+.burger__info{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 50px;
+    background-color: #1B1D29;
+}
+
+.header__text{
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    text-decoration: none;
+
+    color: #FFFFFF;
+}
+.header__text:hover{
+    color: rgb(200, 200, 200);
+}
+
+.top_menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: 7.5%;
+    margin-right: 8%;
+}
+
+.top_menu__info{
+    display: flex;
+    flex-direction: column;
+}
+
+.top_menu__sosiska-v-teste{
+    display: flex;
+    flex-direction: row;
+}
+
+.top_menu__title{
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 119px;
+
+    margin-bottom: 85px;
+
+    color: #FFFFFF;
+
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.top_menu__text{
+    width: 810px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+
+    margin-bottom: 65px;
+
+    color: #FFFFFF;
+
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.top_menu__button{
+    width: 646px;
+    height: 135px;
+
+    background: #5B63BA;
+    border-radius: 46px;
+
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 0;
+
+    color: #FFFFFF;
+
+    transition: 0.35s;
+    transform: translateY(100px);
+    opacity: 0;
+}
+.top_menu__button:hover{
+    cursor: pointer;
+    background-color: #363E98;
+    transition: 0.35s;
+}
+
+.top_menu__img1{
+    width: 663px;
+    height: 659px;
+
+    transform: translateY(100px);
+    opacity: 0;
+}
+.top_menu__img2{
+    display: none;
+
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.cards__title{
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 79px;
+
+    color: #FFFFFF;
+
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.cardsss{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cards__grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,465px);
+    grid-template-rows: repeat(2,543px);
+    column-gap: 100px;
+    row-gap: 120px;
+}
+
+.card{
+    width: 465px;
+    height: 583px;
+    background-color: #494B56;
+
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.cards__info{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+
+    margin-left: 21px;
+}
+
+.card__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    margin-bottom: 0;
+
+    color: #FFFFFF;
+}
+
+.card__text{
+    width: 433px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+}
+
+.card__link{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+    transition: 0.2s;
+}
+.card__link:hover{
+    color: #2C3AFF;
+    transition: 0.2s;
+}
+
+.card__sosiska-v-teste{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 37px;
+}
+
+.strelki{
+    cursor: pointer;
+    display: none;
+}
+
+.otzivi{
+    display: flex;
+    flex-direction: column;
+}
+
+.otzivi__title{
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 79px;
+    text-align: center;
+
+    margin-top: 266px;
+
+    color: #FFFFFF;
+
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.otziv{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 36px;
+
+    margin-left: 7.5%;
+    margin-right: 8%;
+
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.ava{
+    width: 125px;
+    height: 125px;
+}
+
+.otzivi__info{
+    display: flex;
+    flex-direction: column;
+}
+
+.otzivi__name{
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+
+    margin-bottom: 0;
+
+    color: #FFFFFF;
+}
+
+.otzivi__text{
+    width: 1377px;
+
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+
+    color: #FFFFFF;
+}
+
+.forma{
+    margin-top: 211px;
+}
+
+.forma__title{
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 79px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.forma__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 7.5%;
+    margin-right: 8%;
+}
+
+.forma_img{
+    width: 599px;
+    height: 598px;
+
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.forma__sosiska_v_teste{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input{
+    width: 640px;
+    height: 108px;
+
+    background-color: #DAF2FF;
+    border-radius: 35px;
+
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    padding-left: 58px;
+
+    color: #000000;
+
+    transform: translateY(100px);
+    opacity: 0;
+}
+.input:invalid{
+    border: red solid 2px;
+}
+
+.input__button{
+    width: 698px;
+    height: 108px;
+
+    background: #5B63BA;
+    border-radius: 35px;
+
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+
+    margin-top: 23px;
+
+    color: #FFFFFF;
+
+    transition: 0.35s;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.input__button:hover{
+    cursor: pointer;
+    background-color: #363E98;
+    transition: 0.35s;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-left: 7.5%;
+    margin-right: 8%;
+    margin-top: 211px;
+    padding-top: 36px;
+    padding-bottom: 54px;
+
+    border-top: solid 1px #fff;
+}
+
+.footer__info{
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+    align-items: flex-end;
+}
+
+.footer__text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #FFFFFF;
+}
+
+.footer__sosiska_v_teste{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.footer__seti{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.footer__img:hover{
+    cursor: pointer;
+}
+
+
+
+.loaded .top_menu__title{
+    transition: all 0.25s ease 0.25s;
+    opacity: 1;
+    transform: translate(0);
+}
+.loaded .top_menu__img1{
+    transition: all 0.25s ease 0.35s;
+    opacity: 1;
+    transform: translate(0);
+}
+.loaded .top_menu__img2{
+    transition: all 0.25s ease 0.35s;
+    opacity: 1;
+    transform: translate(0);
+}
+.loaded .top_menu__text{
+    transition: all 0.25s ease 0.45s;
+    opacity: 1;
+    transform: translate(0);
+}
+.loaded .top_menu__button{
+    transition: all 0.25s ease 0.55s;
+    opacity: 1;
+    transform: translate(0);
+}
+
+.loaded .cards__title{
+    transition: all 0.25s ease 0.65s;
+    opacity: 1;
+    transform: translate(0);
+}
+.loaded .card{
+    transition: all 0.25s ease 0.75s;
+    opacity: 1;
+    transform: translate(0);
+}
+
+.loaded .otzivi__title{
+    transition: all 0.25s ease 0.85s;
+    opacity: 1;
+    transform: translate(0);
+}
+.loaded .otziv{
+    transition: all 0.25s ease 0.95s;
+    opacity: 1;
+    transform: translate(0);
+}
+
+.loaded .forma__title{
+    transition: all 0.25s ease 1.05s;
+    opacity: 1;
+    transform: translate(0);
+}
+.loaded .input{
+    transition: all 0.25s ease 1.15s;
+    opacity: 1;
+    transform: translate(0);
+}
+.loaded .input__button{
+    transition: all 0.25s ease 1.25s;
+    opacity: 1;
+    transform: translate(0);
+}
+.loaded .forma__img{
+    transition: all 0.25s ease 1.35s;
+    opacity: 1;
+    transform: translate(0);
+}
+
+
+@media screen and (max-width: 1254px) {
+    header{
+        margin-left: 6.4%;
+        margin-right: 6.2%;
+    }
+
+    .header--nav{
+        gap: 4%;
+    }
+
+    .top_menu{
+        margin-left: 6.4%;
+        margin-top: 0px;
+    }
+
+    .top_menu__text{
+        width: 680px;
+        margin-top: 0;
+    }
+
+    .top_menu__img1{
+        display: none;
+    }
+
+    .top_menu__img2{
+        display: flex;
+        width: 446px;
+        height: 444px;
+        margin-top: -25px;
+    }
+
+    .cards{
+        margin-top: 190px;
+    }
+    .cards__grid-container{
+        grid-template-columns: repeat(2,465px);
+        grid-template-rows: repeat(3,543px);
+        column-gap: 110px;
+        row-gap: 120px;
+    }
+
+    .otzivi__text{
+        width: 750px;
+    }
+
+    .input{
+        width: 602px;
+        height: 102px;
+    }
+
+    .input__button{
+        width: 660px;
+        height: 102px;
+    }
+
+    .forma__img{
+        width: 408px;
+        height: 407px;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    header{
+        margin-left: 4.8%;
+    }
+
+    .header--nav{
+        display: none;
+    }
+
+    .burger_open{
+        display: flex;
+        cursor: pointer;
+    }
+
+    .top_menu__img2{
+        width: 385px;
+        height: 383px;
+    }
+
+    .top_menu__text{
+        width: 547px;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .top_menu__button{
+        width: 546px;
+        height: 114px;
+        margin-top: 30px;
+    }
+
+    .cards__grid-container{
+        grid-template-columns: repeat(2,437px);
+        grid-template-rows: repeat(3,522px);
+        column-gap: 88px;
+        row-gap: 60px;
+    }
+
+    .card__text{
+        width: 417px;
+    }
+
+    .card{
+        width: 437px;
+        height: 522px;
+    }
+
+    .card__text{
+        margin-top: 10px;
+    }
+
+    .card__title{
+        margin-top: 5px;
+    }
+
+    .card__img{
+        width: 437px;
+        height: 281px;
+    }
+
+    .forma__info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .forma__img{
+        margin-top: 53px;
+    }
+
+    footer{
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 746px) {
+    header{
+        margin-left: 7.2%;
+    }
+
+    .logo{
+        width: 107px;
+        height: 107px;
+    }
+
+    .header__text{
+        font-size: 24px;
+    }
+
+    .header__nav{
+        gap: 4.2%;
+    }
+
+    .top_menu__title{
+        font-size: 64px;
+        margin-bottom: 0;
+    }
+
+    .top_menu__text{
+        font-size: 32px;
+        width: 445px;
+        margin-top: 0;
+    }
+
+    .top_menu__button{
+        width: 427px;
+        height: 89px;
+        font-size: 24px;
+    }
+
+    .top_menu__img2{
+        width: 225px;
+        height: 224px;
+        margin-top: 50px;
+    }
+
+    .cards{
+        margin-top: 113px;
+    }
+
+    .cards__grid-container{
+        grid-template-rows: repeat(1,522px);
+        grid-template-columns: repeat(1,437px);
+        gap: 0;
+    }
+
+    .strelki{
+        display: flex;
+        
+    }
+
+    .cards__title{
+        font-size: 50px;
+    }
+
+    #slider {
+        position: relative;
+        overflow: hidden;
+    }
+        
+    #slides {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s ease-in-out; /* Анимация */
+    }
+        
+    #slide {
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        font-size: 2em;
+    }
+        
+    #arrow {
+        width: 70px;
+        height: 67px;
+        margin-top: 40px;
+    }
+
+    .otzivi__title{
+        font-size: 48px;
+    }
+
+    .otzivi__name{
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .otzivi__text{
+        font-size: 20px;
+        width: 469px;
+        margin-top: 0;
+    }
+
+    .ava{
+        width: 81px;
+        height: 81px;
+        margin-top: 40px;
+    }
+
+    .otziv{
+        align-items: start;
+    }
+
+    .forma__title{
+        font-size: 48px;
+    }
+
+    .footer__info{
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .footer__text{
+        font-size: 24px;
+    }
+
+    .footer__img{
+        width: 59px;
+        height: 59px;
+    }
+
+    .footer__seti{
+        gap: 14px;
+    }
+
+    footer{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo{
+        width: 85px;
+        height: 85px;
+    }
+
+    .burger{
+        width: 50px;
+        height: 50px;
+    }
+
+    .top_menu__title{
+        font-size: 40px;
+    }
+
+    .top_menu__text{
+        font-size: 20px;
+        width: 278px;
+        line-height: 30px;
+    }
+
+    .top_menu__button{
+        width: 277px;
+        height: 58px;
+        border-radius: 26px;
+        font-size: 16px;
+    }
+
+    .top_menu__img2{
+        width: 144px;
+        height: 143px;
+        margin-top: 20px;
+    }
+
+    .cards__title{
+        font-size: 36px;
+    }
+    
+    .card__img{
+        width: 327px;
+        height: 210px;
+    }
+
+    .cards__grid-container{
+        grid-template-rows: repeat(1,419px);
+        grid-template-columns: repeat(1,327px);
+    }
+
+    .card__title{
+        font-size: 20px;
+    }
+
+    .card__text{
+        font-size: 18px;
+        width: 307px;
+        margin-bottom: 0;
+    }
+
+    .card__link{
+        font-size: 18px;
+        margin-top: 0;
+    }
+    .card{
+        width: 327px;
+        height: 419px;
+    }
+
+    .strelki{
+        display: flex;
+        width: 54px;
+        height: 58px;
+    }
+
+    .card__sosiska-v-teste{
+        gap: 0;
+    }
+
+    .otzivi{
+        margin-top: 100px;
+    }
+
+    .otzivi__title{
+        margin-top: 0;
+        font-size: 36px;
+    }
+
+    .otzivi__name{
+        font-size: 20px;
+    }
+
+    .otzivi__text{
+        font-size: 16px;
+        width: 313px;
+        line-height: 25px;
+    }
+
+    .ava{
+        width: 61px;
+        height: 61px;
+    }
+
+    .otziv{
+        gap: 12px;
+    }
+
+    .forma{
+        margin-top: 85px;
+    }
+
+    .forma__title{
+        font-size: 36px;
+    }
+
+    .input{
+        width: 338px;
+        height: 52px;
+        border-radius: 20px;
+
+        font-size: 20px;
+        line-height: 25px;
+
+        color: #000000;
+    }
+    .input:invalid{
+        border-width: 1px;
+    }
+
+    .input__button{
+        width: 398px;
+        height: 70px;
+        border-radius: 20px;
+
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .forma__img{
+        width: 260px;
+        height: 260px;
+    }
+}

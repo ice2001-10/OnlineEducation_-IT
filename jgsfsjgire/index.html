@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <header class="container header__container">
+        <img src="images/logo.png" alt="logo" class="logo">
+        <div class="header--nav">
+            <a href="#gl" class="header__text">Главная</a>
+            <a href="#forma" class="header__text">Записаться</a>
+            <a href="#otzivi" class="header__text">Отзывы</a>
+        </div>
+        <img src="images/burger (1).png" alt="" class="burger_open" id="burger_b_open">
+        <img src="images/burger_close.png" alt="" class="burger_close hidden" id="burger_b_close">
+        <div class="burger__nav hidden" id="burger__nav">
+            <div class="burger__info">
+                <a href="#gl" class="header__text">Главная</a>
+                <a href="#forma" class="header__text">Записаться</a>
+                <a href="#otzivi" class="header__text">Отзывы</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="top_menu" id="gl">
+            <div class="top_menu__info">
+                <p class="top_menu__title">OnlineEducation</p>
+                <div class="top_menu__sosiska-v-teste">
+                    <div>
+                        <p class="top_menu__text">Онлайн-школа OnlineEducation может провести обучение для вас и вашего ребёнка в различных IT-сферах :3</p>               
+                        <button class="top_menu__button">Записаться</button>
+                    </div>
+                    
+                    <img src="images/top_menu_img.png" alt="w" class="top_menu__img2">
+                </div>
+            </div>
+            <img src="images/top_menu_img.png" alt="w" class="top_menu__img1">
+        </div>
+
+        <div class="cardsss">
+            <img src="images/vlevo.png" alt="w" class="strelki" id="arrow" onclick="prevSlide()">
+            <div class="cards" id="slider">
+                <p class="cards__title">Работы учеников</p>
+                <div class="cards__grid-container" id="slides">
+
+                    <div class="card__sosiska-v-teste" id="slide">
+                        <div class="card">
+                            <img src="images/gta5.png" alt="w" class="card__img">
+                            <div class="cards__info">
+                                <div>
+                                    <p class="card__title">Grand Theft Auto V</p>
+                                    <p class="card__text">Grand Theft Auto V (сокр. GTA V) - компьютерная игра в жанре action-adventure c открытым миром </p>
+                                </div>
+                                <a href="https://store.rockstargames.com/ru/game/buy-gta-v" class="card__link">Ссылка</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__sosiska-v-teste" id="slide">
+                        <div class="card">
+                            <img src="images/fpi_bank.png" alt="w" class="card__img">
+                            <div class="cards__info">
+                                <p class="card__title">ФПИ Банк</p>
+                                <p class="card__text">«ФПИ Банк» - пародийный проект, имитирующий цифровой банк. Создан белорусским блогером Nowkie в октябре 2024 года.</p>
+                                <a href="https://www.fpifpi.ru/" class="card__link">Ссылка</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card__sosiska-v-teste" id="slide">
+                        <div class="card">
+                            <img src="images//android.png" alt="w" class="card__img">
+                            <div class="cards__info">
+                                <p class="card__title">Android</p>
+                                <p class="card__text">Android - популярная операционная система, построенная на ядре Linux.</p>
+                                <a href="https://www.android.com/intl/ru_ru/" class="card__link">Ссылка</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__sosiska-v-teste" id="slide">
+                        <div class="card">
+                            <img src="images/amazon.png" alt="w" class="card__img">
+                            <div class="cards__info">
+                                <p class="card__title">Amazon</p>
+                                <p class="card__text">Amazon.com — крупнейшая торговая площадка в мире. </p>
+                                <a href="https://www.amazon.com/" class="card__link">Ссылка</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card__sosiska-v-teste" id="slide">
+                        <div class="card">
+                            <img src="images/roblox.png" alt="w" class="card__img">
+                            <div class="cards__info">
+                                <p class="card__title">Roblox</p>
+                                <p class="card__text">Roblox — это игровая онлайн-платформа, в которой можно создавать виртуальные пространства, играть роли.</p>
+                                <a href="https://www.roblox.com/" class="card__link">Ссылка</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card__sosiska-v-teste" id="slide">
+                        <div class="card">
+                            <div>
+                                <img src="images/gosuslugi.png" alt="w" class="card__img">
+                                <div class="cards__info">
+                                    <p class="card__title">Госуслуги</p>
+                                    <p class="card__text">«Госуслуги» - справочно-информационный интернет-портал.</p>
+                                    <a href="https://www.gosuslugi.ru/" class="card__link">Ссылка</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <img src="images/vpravo.png" alt="w" class="strelki" id="arrow" onclick="nextSlide()">  
+        </div>
+        
+
+        <div class="otzivi">
+            <p class="otzivi__title"  id="otzivi">Отзывы студентов</p>
+            <div class="otziv">
+                <img src="images/Вася_пупкин.png" alt="w" class="ava">
+                <div class="otzivi__info">
+                    <p class="otzivi__name">Вася Пупкин</p>
+                    <p class="otzivi__text">Я написал «Госуслуги», без поддержки мамы и обратной связи OnlineEducation, я бы не справился</p>
+                </div>
+            </div>
+
+            <div class="otziv">
+                <img src="images/пупа.png" alt="w" class="ava">
+                <div class="otzivi__info">
+                    <p class="otzivi__name">Пупа</p>
+                    <p class="otzivi__text">Судари и сударыни, я хочу представить вам моё творение. Я на зло динозаврам придумал и написал "Roblox". Не важно Что говорят Крысы За спиной У кисы</p>
+                </div>
+            </div>
+
+            <div class="otziv">
+                <img src="images/лупа.png" alt="w" class="ava">
+                <div class="otzivi__info">
+                    <p class="otzivi__name">Лупа</p>
+                    <p class="otzivi__text">отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв отзыв </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="forma" id="forma">
+            <p class="forma__title">Записаться на курс</p>
+            <div class="forma__info">
+                <form action="index.html" class="forma__sosiska_v_teste">
+                    <input type="text" placeholder="Имя" maxlength="17" class="input" required>
+                    <input type="email" placeholder="Email" maxlength="100" class="input" required>
+                    <input type="tel" placeholder="Телефон" maxlength="12" class="input" required>
+                    <button class="input__button">Подать заявку</button>
+                </form>
+                <img src="images/forma_img.png" alt="w" class="forma__img">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img src="images/logo.png" alt="logo" class="logo">
+        <div class="footer__info">
+            <p class="footer__text">8 800 770-00-85</p>
+            <div class="footer__sosiska_v_teste">
+                <p class="footer__text">Мы в соц сетях</p>
+                <div class="footer__seti">
+                    <a href="https://t.me/OnlineEducation_12"><img src="images/telegram.png" alt="w" class="footer__img"></a>
+                    <a href="https://vk.com/OnlineSchool_12"><img src="images/vk.png" alt="w" class="footer__img"></a>
+                    <a href="discord.html"><img src="images/discord.png" alt="w" class="footer__img"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/slider.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/burger2.js"></script>
+</body>
+</html>
